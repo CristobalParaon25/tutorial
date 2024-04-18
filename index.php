@@ -35,16 +35,16 @@ $results = $conn->query($getRecords);
                 </form>
             </div>
         </nav>
-        <div class="table-striped table-hover ">
-            <table class="table  table-hover">
-                <thead>
+            <table class="table table-responsive">
+                <thead class="text-center">
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Name</th>
                         <th scope="col">Contact #</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="text-center">
     <?php foreach($results as $result): ?>
         <tr>
             <td class="text-truncate"><?php echo $result['ID']; ?></td>
@@ -123,14 +123,6 @@ $results = $conn->query($getRecords);
 </div>
 
 
-
-
-
-
-
-
-
-    </div>
     <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
